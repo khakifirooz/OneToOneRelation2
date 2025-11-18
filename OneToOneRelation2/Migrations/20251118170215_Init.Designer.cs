@@ -11,7 +11,7 @@ using OneToOneRelation2.Models;
 namespace OneToOneRelation2.Migrations
 {
     [DbContext(typeof(AppDb))]
-    [Migration("20251118161928_Init")]
+    [Migration("20251118170215_Init")]
     partial class Init
     {
         /// <inheritdoc />

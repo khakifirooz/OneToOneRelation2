@@ -15,4 +15,12 @@ public class AppDb : DbContext
         var connectionString = configSection["DBConnection"];
         optionsBuilder.UseSqlServer(connectionString);
     }
+
+    override protected void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Employee>()
+            .HasOne(e => e.ContactInfo)
+            .WithOne(c => c.Employee)
+            .HasForeignKey<ContactInfo>(c => c.EmployeeId);
+    }
 }
