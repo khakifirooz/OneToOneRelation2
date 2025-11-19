@@ -9,7 +9,7 @@ public class ContactInfo
     public string Mobile { get; set; }
     public string Address { get; set; }
 
-  //  [ForeignKey("Employee")] 
+    [ForeignKey("Employee")] 
     public int EmployeeId { get; set; }
     public Employee Employee { get; set; }
 }

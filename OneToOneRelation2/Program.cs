@@ -12,7 +12,7 @@ var contactInfo = new ContactInfo()
 var employee = new Employee()
 {
     Name = "John Doe",
-    famFamilyily = "Doe Family",
+    Family = "Doe Family",
     ContactInfo = contactInfo
 };
 
